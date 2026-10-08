@@ -6,8 +6,8 @@ import { createOrder, verifyPayment, claimFreeCredits } from "../controllers/pay
 
 const paymentRouter = express.Router()
 
-paymentRouter.post("/order" , isAuth , createOrder )
-paymentRouter.post("/verify" , isAuth , verifyPayment )
+// paymentRouter.post("/order" , isAuth , createOrder )
+// paymentRouter.post("/verify" , isAuth , verifyPayment )
 paymentRouter.post("/claim-free-credits" , isAuth , claimFreeCredits )
 
 
